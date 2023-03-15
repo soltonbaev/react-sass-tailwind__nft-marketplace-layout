@@ -1,10 +1,11 @@
 import React from 'react';
+import GetStarted from './GetStarted/GetStarted';
 
 const Home = () => {
    return (
-      <div>
-         <h1>Hello Home</h1>
-      </div>
+      <main className="container mx-auto items-center px-10">
+         <GetStarted />
+      </main>
    );
 };
 

@@ -11,6 +11,14 @@ body {
   font-size: 16px;
 }
 
+.bg-secondary {
+  background-color: #3b3b3b;
+}
+
+.block-nft {
+  border-radius: 1.25rem;
+}
+
 body a {
   color: white;
 }
@@ -33,6 +41,21 @@ button {
 
 .space-mono-font {
   font-family: "Space Mono", monospace;
+}
+
+h1 {
+  font-size: 4.2rem;
+  font-weight: bold;
+  line-height: 110%;
+}
+
+h4 {
+  font-size: 1.75rem;
+  font-family: "Space Mono", monospace;
+}
+
+h5 {
+  font-weight: bold;
 }
 
 h3 {

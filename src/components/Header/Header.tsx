@@ -12,7 +12,7 @@ const Header = () => {
       {id: 1, name: 'Connect a wallet', path: '/connect-wallet'},
    ];
    return (
-      <header className="container flex mx-auto items-center justify-between py-8">
+      <header className="container flex mx-auto items-center justify-between px-10 lg:px-0 py-8">
          <a href="/">
             <img src={logo} alt="logo" />
          </a>
@@ -43,7 +43,7 @@ const Header = () => {
                         <line x1="6" y1="6" x2="18" y2="18" />
                      </svg>
                   </div>
-                  <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
+                  {/* <ul className="MENU-LINK-MOBILE-OPEN flex flex-col items-center justify-between min-h-[250px]">
                      {menu.map(menuItem => {
                         return (
                            <li
@@ -54,11 +54,11 @@ const Header = () => {
                            </li>
                         );
                      })}
-                  </ul>
+                  </ul> */}
                </div>
             </section>
 
-            <ul className="DESKTOP-MENU hidden space-x-8 lg:flex">
+            <ul className="DESKTOP-MENU hidden space-x-8 lg:flex items-center">
                {menu.map(menuItem => {
                   return (
                      <li key={menuItem.id}>
@@ -66,6 +66,9 @@ const Header = () => {
                      </li>
                   );
                })}
+               <li>
+                  <button>Sign up</button>
+               </li>
             </ul>
          </nav>
       </header>
