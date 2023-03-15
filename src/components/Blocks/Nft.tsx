@@ -13,7 +13,7 @@ const Nft = ({
    return (
       <div className="block-nft bg-secondary">
          <div>
-            <img className="object-cover" src={image} />
+            <img className="object-cover w-[100%]" src={image} />
          </div>
          <div className="p-5">
             <h5>{title}</h5>

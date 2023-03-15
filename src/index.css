@@ -49,6 +49,11 @@ h1 {
   line-height: 110%;
 }
 
+h2 {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
 h4 {
   font-size: 1.75rem;
   font-family: "Space Mono", monospace;

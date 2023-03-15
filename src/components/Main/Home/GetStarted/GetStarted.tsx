@@ -13,7 +13,7 @@ const GetStarted = () => {
       highestBid: '',
    });
    return (
-      <section className="get-started grid sm:grid-cols-1 lg:grid-cols-2 gap-4 py-[5rem]">
+      <section className="get-started grid sm:grid-cols-1 lg:grid-cols-2 gap-4 py-[2.5rem]">
          <div className="column flex flex-col justify-center">
             <h1>Discover digital art & Collect NFTs</h1>
             <p>

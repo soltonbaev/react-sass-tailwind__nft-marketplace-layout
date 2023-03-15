@@ -7,3 +7,13 @@ export type nftPropsType = {
    highestBid?: number;
    priceShown: boolean;
 };
+
+export type colPropsType = {
+   imgMain: string;
+   imgSec: string;
+   imgThird: string;
+   colCounter: number;
+   colName: string;
+   creatorName: string;
+   creatorPic: string;
+};
