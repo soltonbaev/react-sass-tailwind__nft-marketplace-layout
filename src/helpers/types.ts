@@ -24,3 +24,9 @@ export type creatorPropsType = {
    creatorName: string;
    totalSales: number;
 };
+
+export type categoriesPropsType = {
+   name: string;
+   image: string;
+   id?: number;
+};

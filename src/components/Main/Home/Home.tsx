@@ -1,4 +1,5 @@
 import React from 'react';
+import BrowseCategories from './BrowseCategories/BrowseCategories';
 import GetStarted from './GetStarted/GetStarted';
 import TopCreators from './TopCreators/TopCreators';
 import TrendingCollection from './TrendingCollection/TrendingCollection';
@@ -9,6 +10,7 @@ const Home = () => {
          <GetStarted />
          <TrendingCollection />
          <TopCreators />
+         <BrowseCategories />
       </main>
    );
 };
