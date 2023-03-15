@@ -17,3 +17,10 @@ export type colPropsType = {
    creatorName: string;
    creatorPic: string;
 };
+
+export type creatorPropsType = {
+   id: number;
+   creatorPic: string;
+   creatorName: string;
+   totalSales: number;
+};
