@@ -21,14 +21,16 @@ body a:visited {
 }
 
 .inp {
-   height: 60px;
+   padding: 1.25rem;
+   // height: 60px;
    color: white;
-   border-radius: 20px;
+   border-radius: 1.25rem;
 }
 
 button {
-   height: 60px;
-   border-radius: 20px;
+   padding: 1.25rem 3.25rem;
+   // height: 60px;
+   border-radius: 1.25rem;
    background-color: #a259ff;
 }
 
