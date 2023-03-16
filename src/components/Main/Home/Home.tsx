@@ -6,6 +6,7 @@ import GetStarted from './GetStarted/GetStarted';
 import HowItWorks from './HowItWorks/HowItWorks';
 import TopCreators from './TopCreators/TopCreators';
 import TrendingCollection from './TrendingCollection/TrendingCollection';
+import WeeklyDigest from './WeeklyDigest/WeeklyDigest';
 
 const Home = () => {
    return (
@@ -17,6 +18,7 @@ const Home = () => {
          <DiscoverNfts />
          <FeaturedCollection />
          <HowItWorks />
+         <WeeklyDigest />
       </main>
    );
 };
