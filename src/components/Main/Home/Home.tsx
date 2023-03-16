@@ -3,6 +3,7 @@ import BrowseCategories from './BrowseCategories/BrowseCategories';
 import DiscoverNfts from './DiscoverNfts/DiscoverNfts';
 import FeaturedCollection from './FeaturedCollection/FeaturedCollection';
 import GetStarted from './GetStarted/GetStarted';
+import HowItWorks from './HowItWorks/HowItWorks';
 import TopCreators from './TopCreators/TopCreators';
 import TrendingCollection from './TrendingCollection/TrendingCollection';
 
@@ -15,6 +16,7 @@ const Home = () => {
          <BrowseCategories />
          <DiscoverNfts />
          <FeaturedCollection />
+         <HowItWorks />
       </main>
    );
 };
