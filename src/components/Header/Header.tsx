@@ -12,7 +12,7 @@ const Header = () => {
       {id: 1, name: 'Connect a wallet', path: '/connect-wallet'},
    ];
    return (
-      <header className="container flex mx-auto items-center justify-between px-10 lg:px-0 py-8">
+      <header className="container flex mx-auto items-center justify-between px-10 lg:px-0 py-4">
          <a href="/">
             <img src={logo} alt="logo" />
          </a>
