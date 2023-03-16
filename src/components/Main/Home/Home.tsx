@@ -1,5 +1,7 @@
 import React from 'react';
 import BrowseCategories from './BrowseCategories/BrowseCategories';
+import DiscoverNfts from './DiscoverNfts/DiscoverNfts';
+import FeaturedCollection from './FeaturedCollection/FeaturedCollection';
 import GetStarted from './GetStarted/GetStarted';
 import TopCreators from './TopCreators/TopCreators';
 import TrendingCollection from './TrendingCollection/TrendingCollection';
@@ -11,6 +13,8 @@ const Home = () => {
          <TrendingCollection />
          <TopCreators />
          <BrowseCategories />
+         <DiscoverNfts />
+         <FeaturedCollection />
       </main>
    );
 };
