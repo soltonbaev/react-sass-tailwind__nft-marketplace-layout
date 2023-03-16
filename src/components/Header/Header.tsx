@@ -1,10 +1,11 @@
 import React, {useState} from 'react';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import './Header.css';
 import logo from './logo.svg';
 import burgerMenuIcon from './burger-menu-icon.svg';
 
 const Header = () => {
+   const navigate = useNavigate();
    const [isNavOpen, setIsNavOpen] = useState(false);
    const menu = [
       {id: 1, name: 'Marketplace', path: '/marketplace'},
@@ -67,7 +68,13 @@ const Header = () => {
                   );
                })}
                <li>
-                  <button>Sign up</button>
+                  <button
+                     onClick={() => {
+                        navigate('/create-account');
+                     }}
+                  >
+                     Sign up
+                  </button>
                </li>
             </ul>
          </nav>
