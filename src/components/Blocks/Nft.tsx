@@ -2,6 +2,7 @@ import React from 'react';
 import {nftPropsType} from '../../helpers/types';
 
 const Nft = ({
+   bgColor,
    image,
    title,
    creatorPic,
@@ -11,7 +12,7 @@ const Nft = ({
    priceShown,
 }: nftPropsType) => {
    return (
-      <div className="block-nft bg-secondary">
+      <div className={`block-nft ${bgColor}`}>
          <div>
             <img className="object-cover w-[100%]" src={image} />
          </div>

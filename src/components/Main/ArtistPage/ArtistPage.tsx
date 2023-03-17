@@ -1,10 +1,66 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import {useParams} from 'react-router-dom';
+import {getArtist} from '../../../helpers/backend-data/artists/artistsList';
+import discordLogo from '../../Footer/media/DiscordLogo.svg';
+import ytLogo from '../../Footer/media/YoutubeLogo.svg';
+import twitterLogo from '../../Footer/media/TwitterLogo.svg';
+import instagramLogo from '../../Footer/media/InstagramLogo.svg';
+import MoreNFTs from './MoreNFTs';
 
 const ArtistPage = () => {
+   const [artist, setArtist] = useState(getArtist(1));
+
    return (
-      <div>
-         <h1>Artist Page</h1>
-      </div>
+      <main className="artist">
+         <div className="artist__cover">
+            <img className="object-cover w-[100%]" src={artist.coverImage} />
+         </div>
+         <div className="artist__icon relative">
+            <img
+               className="absolute top-[-57px] left-[115px]"
+               src={artist.icon}
+            />
+         </div>
+         <div className="artist__info-wrapper container mx-auto items-center px-10 pb-10">
+            <div className="artist__btns flex justify-between mt-[6rem]">
+               <h1>{artist.name}</h1>
+               <div className="flex gap-4">
+                  <button>{artist.walletAddress}</button>
+                  <button>Follow</button>
+               </div>
+            </div>
+            <div className="artist__info">
+               <div className="artist__stats grid grid-cols-3 md:w-[50%]">
+                  <div>
+                     <h4>{artist.volume}+</h4>
+                     <p>Volume</p>
+                  </div>
+                  <div>
+                     <h4>{artist.nftsSold}+</h4>
+                     <p>NFTs Sold</p>
+                  </div>
+                  <div>
+                     <h4>{artist.followers}+</h4>
+                     <p>Followers</p>
+                  </div>
+               </div>
+               <div className="artist__bio">
+                  <p className="space-mono-font">Bio</p>
+                  <p>{artist.bio}</p>
+               </div>
+               <div className="artist__links ">
+                  <p className="space-mono-font">Links</p>
+                  <div className="flex gap-2">
+                     <img src={discordLogo} />
+                     <img src={ytLogo} />
+                     <img src={twitterLogo} />
+                     <img src={instagramLogo} />
+                  </div>
+               </div>
+            </div>
+         </div>
+         <MoreNFTs />
+      </main>
    );
 };
 

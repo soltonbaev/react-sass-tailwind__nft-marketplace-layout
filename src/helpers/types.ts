@@ -1,4 +1,5 @@
 export type nftPropsType = {
+   bgColor: string;
    image: string;
    title: string;
    creatorPic: string;
