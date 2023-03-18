@@ -4,21 +4,13 @@ import MoreFromMarketplace from './MoreFromMarketplace';
 const Marketplace = () => {
    return (
       <main className="marketplace">
-         <div className="artist__tabs border-t border-[#3b3b3b] ">
-            <div className="tab__btns container px-10 mx-auto items-center grid grid-cols-2 ">
-               <div className="flex items-center justify-center gap-4 border-b p-[1.5rem]">
-                  <span className="font-bold">NFTs</span>
-                  <span className="rounded-[1.25rem] px-[10px] py-[5px] bg-[#858584]">
-                     302
-                  </span>
-               </div>
-               <div className="flex items-center justify-center gap-4 p-[1.5rem]">
-                  <span className="text-[#858584] font-bold">Collections</span>
-                  <span className="rounded-[1.25rem] px-[10px] py-[5px] bg-secondary">
-                     67
-                  </span>
-               </div>
-            </div>
+         <div className="container mx-auto px-10 py-10 pb-20">
+            <h1>Browse Marketplace</h1>
+            <p>Browse through more than 50k NFTs on the NFT Marketplace.</p>
+            <input
+               className="p-[1.1rem] w-[100%] bg-[#2B2B2B] rounded-[1.25rem] border-[1px] border-[#3B3B3B]"
+               placeholder="Search your favourite NFTs"
+            ></input>
          </div>
          <MoreFromMarketplace />
       </main>
