@@ -3,10 +3,12 @@ import Artists from './Artists';
 
 const Rankings = () => {
    return (
-      <main className="rankings container mx-auto px-10">
-         <h1>Top Creators</h1>
-         <p>Check out top ranking NFT artists on the NFT Marketplace.</p>
-         <div className="grid grid-cols-4 gap-1 ">
+      <main className="rankings container mx-auto px-10 py-10">
+         <div className="py-10">
+            <h1>Top Creators</h1>
+            <p>Check out top ranking NFT artists on the NFT Marketplace.</p>
+         </div>
+         <div className="grid grid-cols-4 gap-1 py-5 ">
             <div className="text-center">
                <span className="hidden md:block border-b p-[1.2rem] ">
                   Today
@@ -28,6 +30,7 @@ const Rankings = () => {
 
             <div className="text-inactive p-[1.2rem] text-center">All Time</div>
          </div>
+
          <Artists />
       </main>
    );
