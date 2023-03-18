@@ -28,6 +28,10 @@ export function getArtist(id: any): any {
    return res;
 }
 
+export function getAllArtists(): any {
+   return artistList.map(artist => artist);
+}
+
 export const artistList = [
    {
       icon: avatar1,
