@@ -8,7 +8,7 @@ const Creator = ({
    totalSales,
 }: creatorPropsType) => {
    return (
-      <div className="flex relative flex-col justify-center items-center bg-[#3B3B3B] rounded-[1.25rem] w-[240px] h-[240px] p-[1rem] gap-4">
+      <div className="creator-block flex relative flex-col justify-center items-center bg-[#3B3B3B] rounded-[1.25rem] w-[240px] h-[240px] p-[1rem] gap-4">
          <div className="absolute left-[1.25rem] top-[1.25rem] p-[1rem] bg-[#2B2B2B] w-[30px] h-[30px] rounded-[50%] flex items-center justify-center">
             {id}
          </div>

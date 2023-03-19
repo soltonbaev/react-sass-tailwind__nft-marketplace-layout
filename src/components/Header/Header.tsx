@@ -9,8 +9,8 @@ const Header = () => {
    const [isNavOpen, setIsNavOpen] = useState(false);
    const menu = [
       {id: 1, name: 'Marketplace', path: '/marketplace'},
-      {id: 1, name: 'Rankings', path: '/rankings'},
-      {id: 1, name: 'Connect a wallet', path: '/connect-wallet'},
+      {id: 2, name: 'Rankings', path: '/rankings'},
+      {id: 3, name: 'Connect a wallet', path: '/connect-wallet'},
    ];
    return (
       <header className="container flex mx-auto items-center justify-between px-10 lg:px-0 py-4">
@@ -69,6 +69,7 @@ const Header = () => {
                })}
                <li>
                   <button
+                     className="btn-solid"
                      onClick={() => {
                         navigate('/create-account');
                      }}

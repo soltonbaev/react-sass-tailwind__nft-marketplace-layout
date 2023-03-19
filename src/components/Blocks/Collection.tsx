@@ -29,7 +29,7 @@ const Collection = ({
          <h5>{colName}</h5>
          <div className="flex gap-2">
             <img src={creatorPic} />
-            <span className="creator-name">{creatorName}</span>
+            <span className="creator-name space-mono-font">{creatorName}</span>
          </div>
       </div>
    );

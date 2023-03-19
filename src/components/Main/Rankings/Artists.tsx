@@ -6,14 +6,14 @@ const Artists = () => {
    const [artists, setArtists] = useState(artistList);
    return (
       <section className="">
-         <div className="sort-bar grid grid-cols-2 border-[1px] border-[#3B3B3B] rounded-[1.25rem] py-4 my-4">
+         <div className="sort-bar grid grid-cols-2 border-[1px] border-[#3B3B3B] rounded-[1.25rem] px-4 py-4 my-4">
             <div className="flex gap-4 px-4">
                <div>#</div>
                <div>Artist</div>
             </div>
-            <div className="grid grid-cols-3">
-               <div className="flex justify-center hidden sm:block">Change</div>
-               <div className="flex justify-center hidden md:block">
+            <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+               <div className="flex justify-center hidden sm:flex">Change</div>
+               <div className="flex justify-center hidden md:flex">
                   NFTs Sold
                </div>
                <div className="flex justify-center">Volume</div>

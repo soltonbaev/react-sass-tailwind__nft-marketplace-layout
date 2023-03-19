@@ -2,7 +2,7 @@ import React from 'react';
 import image from './Image Placeholder.png';
 const CreateAccount = () => {
    return (
-      <main className="container mx-auto items-center">
+      <main className="">
          <div className="grid xs:grid-cols-1 md:grid-cols-2 gap-4 items-center justify-center">
             <div>
                <img className="object-cover w-[100%]" src={image} />
@@ -34,7 +34,9 @@ const CreateAccount = () => {
                      className="inp h-[46px]"
                      type="text"
                   />
-                  <button className="h-[46px] p-0">Create acount</button>
+                  <button className="flex items-center justify-center h-[46px] btn-solid">
+                     Create account
+                  </button>
                </div>
             </div>
          </div>

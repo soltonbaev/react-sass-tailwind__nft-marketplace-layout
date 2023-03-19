@@ -34,16 +34,21 @@ body a:visited {
 
 .inp {
    padding: 1.25rem;
-   // height: 60px;
    color: white;
    border-radius: 1.25rem;
 }
 
-button {
+.btn-solid {
    padding: 1.25rem 3.25rem;
-   // height: 60px;
    border-radius: 1.25rem;
    background-color: #a259ff;
+}
+
+.btn-outlined {
+   border-radius: 1.25rem;
+   border: 1px solid #a259ff;
+   padding: 0rem 3.25rem;
+   height: 60px;
 }
 
 .space-mono-font {
@@ -70,6 +75,7 @@ h4 {
 }
 
 h5 {
+   font-size: 1.375rem;
    font-weight: bold;
 }
 

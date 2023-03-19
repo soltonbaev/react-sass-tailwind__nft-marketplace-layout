@@ -13,14 +13,14 @@ const GetStarted = () => {
       highestBid: '',
    });
    return (
-      <section className="get-started grid sm:grid-cols-1 lg:grid-cols-2 gap-4 py-[2.5rem]">
+      <section className="get-started grid sm:grid-cols-1 lg:grid-cols-2 gap-10 py-[2.5rem]">
          <div className="column flex flex-col justify-center">
             <h1>Discover digital art & Collect NFTs</h1>
             <p>
                NFT marketplace UI created with Anima for Figma. Collect, buy and
                sell art from more than 20k NFT artists.
             </p>
-            <button className="my-5 w-[15rem]">Get started</button>
+            <button className="my-5 w-[15rem] btn-solid">Get started</button>
             <div className="stats grid grid-cols-3 ">
                <div>
                   <h4>240k+ </h4>
@@ -38,6 +38,7 @@ const GetStarted = () => {
          </div>
          <div className="column">
             <Nft
+               bgColor="#3B3B3B"
                image={nft.image}
                title={nft.title}
                creatorPic={nft.creatorPic}

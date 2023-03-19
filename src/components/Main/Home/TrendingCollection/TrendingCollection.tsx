@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {trendingCollection} from '../../../../helpers/backend-data/trendingCollection/trendingCollection';
 import Collection from '../../../Blocks/Collection';
+import './TrendingCollection.css';
 
 const TrendingCollection = () => {
    const [collections, setCollections] = useState(trendingCollection);
@@ -8,7 +9,7 @@ const TrendingCollection = () => {
       <section className="py-[2.5rem]">
          <h2>Trending collection</h2>
          <p>Checkout our weekly updated trending collection</p>
-         <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
+         <div className="trending-collections grid xs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-10">
             {collections.map(col => {
                return (
                   <Collection
