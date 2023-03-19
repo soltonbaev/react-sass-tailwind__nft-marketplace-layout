@@ -35,7 +35,7 @@ const NFTpage = () => {
                   </p>
                   <p className="space-mono-font">Tags</p>
                   <div className="flex gap-2">
-                     {nft.tags.map(tag => {
+                     {nft.tags.map((tag: string) => {
                         return (
                            <span className="bg-secondary px-[10px] py-[5px] rounded-[20px] ">
                               {tag}

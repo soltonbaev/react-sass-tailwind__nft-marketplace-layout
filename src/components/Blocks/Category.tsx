@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import {categoriesPropsType} from '../../helpers/types';
 
-const Category = ({image, name}: categoriesPropsType) => {
+const Category = ({image, name, id}: categoriesPropsType) => {
    return (
       <div className="bg-[#3B3B3B] rounded-[2.1rem]">
          <div>

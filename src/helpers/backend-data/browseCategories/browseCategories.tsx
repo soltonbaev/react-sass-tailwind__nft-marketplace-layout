@@ -8,12 +8,12 @@ import img7 from './media/7.png';
 import img8 from './media/8.png';
 
 export const browseCategories = [
-   {name: 'Art', image: img1},
-   {name: 'Collectibles', image: img2},
-   {name: 'Music', image: img3},
-   {name: 'Photography', image: img4},
-   {name: 'Video', image: img5},
-   {name: 'Utility', image: img6},
-   {name: 'Sport', image: img7},
-   {name: 'Virtual Worlds', image: img8},
+   {id: 1, name: 'Art', image: img1},
+   {id: 2, name: 'Collectibles', image: img2},
+   {id: 3, name: 'Music', image: img3},
+   {id: 4, name: 'Photography', image: img4},
+   {id: 5, name: 'Video', image: img5},
+   {id: 6, name: 'Utility', image: img6},
+   {id: 7, name: 'Sport', image: img7},
+   {id: 8, name: 'Virtual Worlds', image: img8},
 ];
