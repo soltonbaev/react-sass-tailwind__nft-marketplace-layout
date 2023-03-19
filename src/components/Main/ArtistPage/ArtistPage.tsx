@@ -28,7 +28,10 @@ const ArtistPage = () => {
                   <button className="btn-solid h-[60px]">
                      {artist.walletAddress}
                   </button>
-                  <button className="btn-outlined h-[60px]">Follow</button>
+                  <button className="btn-outlined h-[60px]">
+                     <img src="./icons/buttons/RocketLaunch.svg" />
+                     Follow
+                  </button>
                </div>
             </div>
             <div className="artist__info pt-4">
