@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Link} from 'react-router-dom';
 import {disconverNFTs} from '../../../../helpers/backend-data/discoverNFTs/discoverNFTs';
 import Nft from '../../../Blocks/Nft';
 
@@ -12,10 +13,12 @@ const DiscoverNfts = () => {
                <p>Explore new trending NFTs</p>
             </div>
             <div>
-               <button className="btn-outlined flex items-center gap-2">
-                  <img src="./icons/buttons/Eye.svg" />
-                  See All
-               </button>
+               <Link to="/marketplace">
+                  <button className="btn-outlined flex items-center gap-2">
+                     <img src="./icons/buttons/Eye.svg" />
+                     See All
+                  </button>
+               </Link>
             </div>
          </div>
          <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
