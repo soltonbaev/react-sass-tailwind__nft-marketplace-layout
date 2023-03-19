@@ -27,7 +27,7 @@ const MoreFromMarketplace = () => {
                {nfts.map(nft => {
                   return (
                      <Nft
-                        bgColor="var(--color-primary)"
+                        bgColor="#2B2B2B"
                         image={nft.image}
                         title={nft.title}
                         creatorPic={nft.creatorPic}
