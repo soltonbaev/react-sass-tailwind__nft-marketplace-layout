@@ -16,7 +16,7 @@ const FeaturedCollection = () => {
          }}
          className="featured-collection h-[660px] relative"
       >
-         <div className="absolute left-[50%] bottom-20 -translate-x-[50%] flex gap-4 items-center justify-center">
+         <div className="absolute left-[50%] bottom-20 -translate-x-[50%] flex flex-col md:flex-row gap-4 ">
             <div>
                <div className="space-mono-font flex justify-center gap-4 bg-[var(--color-secondary)] rounded-[1.25rem] w-[151px] p-[0.5rem]">
                   <img src={avatar} />{' '}
