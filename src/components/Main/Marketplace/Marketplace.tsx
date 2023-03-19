@@ -4,7 +4,7 @@ import MoreFromMarketplace from './MoreFromMarketplace';
 const Marketplace = () => {
    return (
       <main className="marketplace">
-         <div className="container mx-auto px-10 py-10 pb-20">
+         <div className="container mx-auto p-4 md:px-20 md:py-10 pb-20">
             <h1>Browse Marketplace</h1>
             <p>Browse through more than 50k NFTs on the NFT Marketplace.</p>
             <input

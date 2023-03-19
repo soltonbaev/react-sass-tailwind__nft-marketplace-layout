@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {colPropsType} from '../../helpers/types';
 
 const Collection = ({
@@ -26,10 +27,14 @@ const Collection = ({
                {colCounter}
             </div>
          </div>
-         <h5>{colName}</h5>
+         <h5>
+            <Link to="/nft/1">{colName}</Link>
+         </h5>
          <div className="flex gap-2">
             <img src={creatorPic} />
-            <span className="creator-name space-mono-font">{creatorName}</span>
+            <span className="creator-name space-mono-font">
+               <Link to="/artist/1">{creatorName}</Link>
+            </span>
          </div>
       </div>
    );

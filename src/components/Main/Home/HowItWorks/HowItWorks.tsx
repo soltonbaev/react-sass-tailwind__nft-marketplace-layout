@@ -29,10 +29,10 @@ const HowItWorks = () => {
       <section className="how-it-works py-[2rem]">
          <h2>How It Works</h2>
          <p>Find Out How To Get Started</p>
-         <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4 items-center">
+         <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-10 items-center">
             {data.map(item => {
                return (
-                  <div className="md:w-[210px] lg:w-[330px] bg-[#3B3B3B] rounded-[1.25rem]">
+                  <div className="aspect-[3/4] bg-[#3B3B3B] rounded-[1.25rem]">
                      <div>
                         <img
                            className="object-cover w-[100%]"

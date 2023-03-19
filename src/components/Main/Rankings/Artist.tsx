@@ -7,7 +7,7 @@ const Artist = ({id, name, change, nftsSold, volume, creatorPic}: any) => {
             <div>{id}</div>
             <img className="w-[40px]" src={creatorPic} />
             <div>
-               <h5>{name}</h5>
+               <span className="font-bold md:text-[22px]">{name}</span>
             </div>
          </div>
          <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-1 ">
@@ -15,7 +15,9 @@ const Artist = ({id, name, change, nftsSold, volume, creatorPic}: any) => {
                +{change}
             </div>
             <div className="flex justify-center hidden md:flex">{nftsSold}</div>
-            <div className="flex justify-center">{volume} ETH</div>
+            <div className="flex justify-end md:justify-center">
+               {volume} ETH
+            </div>
          </div>
       </div>
    );

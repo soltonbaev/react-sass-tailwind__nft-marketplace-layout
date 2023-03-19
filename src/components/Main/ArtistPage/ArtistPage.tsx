@@ -21,7 +21,7 @@ const ArtistPage = () => {
                src={artist.icon}
             />
          </div>
-         <div className="artist__info-wrapper container mx-auto items-center px-10 pb-10">
+         <div className="artist__info-wrapper container mx-auto items-center p-4 md:px-20 md:py-10">
             <div className="artist__btns flex flex-col lg:flex-row justify-between mt-[6rem] gap-4">
                <h1>{artist.name}</h1>
                <div className="flex flex-col md:flex-row gap-4">

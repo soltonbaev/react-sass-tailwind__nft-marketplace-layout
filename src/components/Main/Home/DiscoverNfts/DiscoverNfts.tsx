@@ -12,13 +12,17 @@ const DiscoverNfts = () => {
                <p>Explore new trending NFTs</p>
             </div>
             <div>
-               <button>See All</button>
+               <button className="btn-outlined flex items-center gap-2">
+                  <img src="./icons/buttons/Eye.svg" />
+                  See All
+               </button>
             </div>
          </div>
          <div className="grid sm:grid-cols-1 lg:grid-cols-3 gap-4">
             {nfts.map(nft => {
                return (
                   <Nft
+                     bgColor="#3B3B3B"
                      image={nft.image}
                      title={nft.title}
                      creatorPic={nft.creatorPic}

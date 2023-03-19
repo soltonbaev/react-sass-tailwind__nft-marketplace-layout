@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import nftImg from './space-walking-img.png';
 import artistPic from './animakid-pic.png';
 import Nft from '../../../Blocks/Nft';
+import {Link} from 'react-router-dom';
 
 const GetStarted = () => {
    const [nft, setNft] = useState({
@@ -20,7 +21,12 @@ const GetStarted = () => {
                NFT marketplace UI created with Anima for Figma. Collect, buy and
                sell art from more than 20k NFT artists.
             </p>
-            <button className="my-5 w-[15rem] btn-solid">Get started</button>
+            <Link to="/marketplace">
+               <button className="my-5 w-[15rem] btn-solid flex items-center gap-2">
+                  <img src="./icons/buttons/RocketLaunch.svg" />
+                  Get started
+               </button>
+            </Link>
             <div className="stats grid grid-cols-3 ">
                <div>
                   <h4>240k+ </h4>

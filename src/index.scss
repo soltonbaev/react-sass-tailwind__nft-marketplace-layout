@@ -12,6 +12,14 @@ body {
    font-size: 16px;
 }
 
+//color vars
+:root {
+   --color-grey: #cccccc;
+   --color-primary: #2b2b2b;
+   --color-secondary: #3b3b3b;
+   --color-purple: #a259ff;
+}
+
 .bg-primary {
    background-color: #2b2b2b;
 }
@@ -32,6 +40,10 @@ body a:visited {
    color: white;
 }
 
+body a:hover {
+   color: var(--color-purple);
+}
+
 .inp {
    padding: 1.25rem;
    color: white;
@@ -44,11 +56,31 @@ body a:visited {
    background-color: #a259ff;
 }
 
+.btn-solid:hover {
+   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
 .btn-outlined {
    border-radius: 1.25rem;
    border: 1px solid #a259ff;
    padding: 0rem 3.25rem;
    height: 60px;
+}
+
+.btn-outlined:hover {
+   animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+   0%,
+   100% {
+      color: white;
+      background-color: #a259ff;
+   }
+   50% {
+      color: white;
+      background-color: #6f00ff;
+   }
 }
 
 .space-mono-font {
@@ -60,9 +92,12 @@ body a:visited {
 }
 
 h1 {
-   font-size: 4.2rem;
+   font-size: 3rem;
    font-weight: bold;
    line-height: 110%;
+   @media (min-width: 400px) {
+      font-size: 4.2rem;
+   }
 }
 
 h2 {

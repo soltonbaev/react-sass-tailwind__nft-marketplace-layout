@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {categoriesPropsType} from '../../helpers/types';
 
 const Category = ({image, name}: categoriesPropsType) => {
@@ -7,7 +8,9 @@ const Category = ({image, name}: categoriesPropsType) => {
          <div>
             <img className="object-cover w-[100%]" src={image} />
          </div>
-         <p className="p-[1rem] my-[1rem] font-bold">{name}</p>
+         <p className="p-[1rem] my-[1rem] font-bold">
+            <Link to="/">{name}</Link>
+         </p>
       </div>
    );
 };

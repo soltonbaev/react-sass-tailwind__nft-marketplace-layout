@@ -11,7 +11,7 @@ const NFTpage = () => {
          <div className="nft__image">
             <img className="object-fit w-[100%]" src={nft.image} />
          </div>
-         <div className="nft__info container mx-auto px-10 py-10">
+         <div className="nft__info container mx-auto p-4 md:px-20 md:py-10">
             <div className="grid xs:grid-cols-1 md:grid-cols-2 gap-4">
                <div className="mx-auto">
                   <Timer />

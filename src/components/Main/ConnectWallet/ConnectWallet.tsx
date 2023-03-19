@@ -18,21 +18,21 @@ const ConnectWallet = () => {
                   providers.
                </p>
                <div className="flex flex-col gap-4">
-                  <button className="w-[320px] text-center bg-[#3B3B3B] border-[1px] border-[#a259ff]  relative">
+                  <button className="btn-outlined w-[320px] text-center bg-[#3B3B3B] border-[1px] border-[#a259ff]  relative">
                      <img
                         className="absolute left-10 top-3"
                         src={metamaskIcon}
                      />
                      <span> Metamask</span>
                   </button>
-                  <button className="w-[320px] text-center bg-[#3B3B3B] border-[1px] border-[#a259ff] relative">
+                  <button className="btn-outlined w-[320px] text-center bg-[#3B3B3B] border-[1px] border-[#a259ff] relative">
                      <img
                         className="absolute left-10 top-3"
                         src={walletConnectIcon}
                      />
                      <span>Wallet Connect</span>
                   </button>
-                  <button className="w-[320px] text-center bg-[#3B3B3B] border-[1px] border-[#a259ff] relative">
+                  <button className="btn-outlined w-[320px] text-center bg-[#3B3B3B] border-[1px] border-[#a259ff] relative">
                      <img
                         className="absolute left-10 top-3"
                         src={coinbaseIcon}

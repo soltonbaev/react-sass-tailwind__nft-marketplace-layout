@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import {nftPropsType} from '../../helpers/types';
 
 const Nft = ({
@@ -16,21 +17,35 @@ const Nft = ({
          <div>
             <img className="object-cover w-[100%]" src={image} />
          </div>
-         <div className="p-5">
-            <h5>{title}</h5>
+         <div className="p-8">
+            <h5>
+               <Link to="/nft/1">{title}</Link>
+            </h5>
             <div className="creator-data flex gap-2 pt-1">
                <img src={creatorPic} />
-               <span className="creator-name">{creatorName}</span>
+               <span className="creator-name space-mono-font">
+                  <Link to="/artist/1">{creatorName}</Link>
+               </span>
             </div>
             {priceShown && (
-               <div className="price-row grid grid-cols-2">
+               <div className="price-row flex justify-between pt-4">
                   <div>
-                     <p>Price</p>
-                     <p>{price}</p>
+                     <p className="flex flex-col gap-1 ">
+                        <span className="space-mono-font text-[12px] text-[#858584]">
+                           Price
+                        </span>
+                        <span className="space-mono-font">{price} ETH</span>
+                     </p>
                   </div>
                   <div>
-                     <p>Highest Bid</p>
-                     <p>{highestBid}</p>
+                     <p className="flex flex-col gap-1">
+                        <span className="space-mono-font text-[12px] text-[#858584]">
+                           Highest Bid
+                        </span>
+                        <span className="space-mono-font">
+                           {highestBid} WETH
+                        </span>
+                     </p>
                   </div>
                </div>
             )}

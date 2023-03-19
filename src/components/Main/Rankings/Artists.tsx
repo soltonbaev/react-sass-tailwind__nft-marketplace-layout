@@ -16,7 +16,7 @@ const Artists = () => {
                <div className="flex justify-center hidden md:flex">
                   NFTs Sold
                </div>
-               <div className="flex justify-center">Volume</div>
+               <div className="flex justify-end md:justify-center">Volume</div>
             </div>
          </div>
          <div className="flex flex-col gap-4">

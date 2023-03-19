@@ -13,7 +13,7 @@ const Header = () => {
       {id: 3, name: 'Connect a wallet', path: '/connect-wallet'},
    ];
    return (
-      <header className="container flex mx-auto items-center justify-between px-10 lg:px-0 py-4">
+      <header className="container flex mx-auto items-center justify-between px-4 lg:px-0 py-4">
          <a href="/">
             <img src={logo} alt="logo" />
          </a>
@@ -69,12 +69,13 @@ const Header = () => {
                })}
                <li>
                   <button
-                     className="btn-solid"
+                     className="btn-solid flex gap-2 items-center"
                      onClick={() => {
                         navigate('/create-account');
                      }}
                   >
-                     Sign up
+                     <img src="./icons/buttons/User.svg"></img>
+                     <span>Sign up</span>
                   </button>
                </li>
             </ul>

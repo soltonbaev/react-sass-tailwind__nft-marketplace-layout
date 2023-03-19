@@ -10,7 +10,7 @@ import WeeklyDigest from './WeeklyDigest/WeeklyDigest';
 
 const Home = () => {
    return (
-      <main className="container mx-auto items-center px-10 py-10">
+      <main className="container mx-auto items-center p-4 md:px-20 md:py-10">
          <GetStarted />
          <TrendingCollection />
          <TopCreators />

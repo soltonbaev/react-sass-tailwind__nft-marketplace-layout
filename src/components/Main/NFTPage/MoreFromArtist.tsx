@@ -9,7 +9,7 @@ import Nft from '../../Blocks/Nft';
 const MoreFromArtist = () => {
    const [nfts, setNfts] = useState(orbitianNfts);
    return (
-      <section className="more-from-asrtist container mx-auto p-10">
+      <section className="more-from-asrtist container mx-autop-4 md:px-20">
          <div className="flex flex-col md:flex-row gap-10 justify-between m-10">
             <h2>More From This Artist</h2>
             <button className="btn-outlined">Go to Artist Page</button>

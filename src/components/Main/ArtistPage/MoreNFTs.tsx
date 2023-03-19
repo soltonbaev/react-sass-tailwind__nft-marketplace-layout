@@ -8,7 +8,7 @@ const MoreNFTs = () => {
    return (
       <>
          <div className="artist__tabs border-t border-[#3b3b3b] ">
-            <div className="tab__btns container px-10 mx-auto items-center grid grid-cols-3 ">
+            <div className="tab__btns container p-4 md:px-20 md:py-10 mx-auto items-center grid grid-cols-3 ">
                <div className="flex items-center justify-center gap-4 border-b p-[1.5rem]">
                   <span className="font-bold">Created</span>
                   <span className="rounded-[1.25rem] hidden sm:block px-[10px] py-[5px] bg-[#858584]">
@@ -30,7 +30,7 @@ const MoreNFTs = () => {
             </div>
          </div>
          <div className="nfts bg-secondary">
-            <div className="nfts__wrapper container mx-auto px-10 py-[4rem] grid sm:grid-cols-1 lg:grid-cols-3 gap-4 ">
+            <div className="nfts__wrapper container mx-auto p-4 md:px-20 py-[4rem] grid sm:grid-cols-1 lg:grid-cols-3 gap-4 ">
                {nfts.map(nft => {
                   return (
                      <Nft

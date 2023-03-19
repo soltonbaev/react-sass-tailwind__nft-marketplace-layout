@@ -7,7 +7,7 @@ const BrowseCategories = () => {
    return (
       <section className="py-[2.5rem]">
          <h2>Browse categories</h2>
-         <div className="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 mt-[2rem]">
+         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10 mt-[2rem]">
             {categories.map(category => {
                return (
                   <Category
