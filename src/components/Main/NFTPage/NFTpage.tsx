@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {getNft} from '../../../helpers/backend-data/artists/orbitian/orbitian';
 import Timer from '../../Blocks/Timer';
 import globe from './globeIcon.png';
+import MoreFromArtist from './MoreFromArtist';
 
 const NFTpage = () => {
    const [nft, setNft] = useState(getNft(1));
@@ -45,6 +46,7 @@ const NFTpage = () => {
                </div>
             </div>
          </div>
+         <MoreFromArtist />
       </main>
    );
 };

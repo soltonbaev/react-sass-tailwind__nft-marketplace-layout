@@ -1,0 +1,10 @@
+@media (min-width: 0) and (max-width: 586px) {
+   .orbitian-nfts .block-nft:nth-child(n + 3) {
+      display: none;
+   }
+}
+@media (min-width: 587px) and (max-width: 1000px) {
+   .orbitian-nfts .block-nft:nth-child(n + 7) {
+      display: none;
+   }
+} /*# sourceMappingURL=MoreFromArtist.css.map */
