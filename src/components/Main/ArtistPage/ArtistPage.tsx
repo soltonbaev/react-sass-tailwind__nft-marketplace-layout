@@ -22,14 +22,16 @@ const ArtistPage = () => {
             />
          </div>
          <div className="artist__info-wrapper container mx-auto items-center px-10 pb-10">
-            <div className="artist__btns flex justify-between mt-[6rem]">
+            <div className="artist__btns flex flex-col lg:flex-row justify-between mt-[6rem] gap-4">
                <h1>{artist.name}</h1>
-               <div className="flex gap-4">
-                  <button>{artist.walletAddress}</button>
-                  <button>Follow</button>
+               <div className="flex flex-col md:flex-row gap-4">
+                  <button className="btn-solid h-[60px]">
+                     {artist.walletAddress}
+                  </button>
+                  <button className="btn-outlined h-[60px]">Follow</button>
                </div>
             </div>
-            <div className="artist__info">
+            <div className="artist__info pt-4">
                <div className="artist__stats grid grid-cols-3 md:w-[50%]">
                   <div>
                      <h4>{artist.volume}+</h4>
